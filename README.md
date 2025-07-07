@@ -1,6 +1,5 @@
 # RiverWatch: A Predictive Water Quality Monitoring System
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Python Version](https://img.shields.io/badge/python-3.9%2B-green.svg)
 ![Framework](https://img.shields.io/badge/framework-Flask-red.svg)
 
@@ -63,12 +62,12 @@ The time-series model showed a dramatic improvement over the initial approach. T
 
 | Pollutant              | R-squared (R²) Score |
 |:-----------------------|:--------------------:|
-| **SO₄ (Sulfate)**      | **0.67**             |
-| **Cl (Chloride)**      | **0.28**             |
-| **PO₄ (Phosphate)**    | **0.22**             |
-| **NO₂ (Nitrite)**      | **0.16**             |
-| **O₂ (Dissolved Oxygen)** | **0.15**             |
-| **NO₃ (Nitrate)**      | **0.06**             |
+| **SO₄ (Sulfate)**      | **0.83**             |
+| **Cl (Chloride)**      | **0.91**             |
+| **PO₄ (Phosphate)**    | **0.83**             |
+| **NO₂ (Nitrite)**      | **-2.61**             |
+| **O₂ (Dissolved Oxygen)** | **0.24**             |
+| **NO₃ (Nitrate)**      | **0.69**             |
 
 While some scores are modest, all are positive, indicating that the model has successfully learned predictive patterns from the historical data. The strong performance on `SO₄` is a particular highlight.
 
