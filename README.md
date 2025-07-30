@@ -64,12 +64,12 @@ The time-series model showed a dramatic improvement over the initial approach. T
 |:-----------------------|:--------------------:|
 | **SO₄ (Sulfate)**      | **0.83**             |
 | **Cl (Chloride)**      | **0.91**             |
-| **PO₄ (Phosphate)**    | **0.83**             |
+| **PO₄ (Phosphate)**    | **0.59**             |
 | **NO₂ (Nitrite)**      | **-2.61**             |
 | **O₂ (Dissolved Oxygen)** | **0.24**             |
 | **NO₃ (Nitrate)**      | **0.69**             |
 
-While some scores are modest, all are positive, indicating that the model has successfully learned predictive patterns from the historical data. The strong performance on `SO₄` is a particular highlight.
+The strong performance on `Cl` and `SO₄` is a particular highlight.
 
 ## Project Structure
 ```
