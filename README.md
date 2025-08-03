@@ -1,8 +1,7 @@
 # RiverWatch: A Predictive Water Quality Monitoring System
 
-![Python Version](https://img.shields.io/badge/python-3.9%2B-green.svg)
-![Framework](https://img.shields.io/badge/framework-Flask-red.svg)
-
+[![Python Version](https://img.shields.io/badge/Python-3.9+-blue?logo=python&logoColor=white)](https://www.python.org/)
+[![Streamlit App](https://img.shields.io/badge/Streamlit-App-red?logo=streamlit&logoColor=white)](https://streamlit.io/)
 A complete end-to-end data science project that forecasts key water quality indicators for the Southern Bug River using a time-series machine learning model and a deployed web application.
 
 ---
