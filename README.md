@@ -49,13 +49,13 @@ This transformed the model from a failed prototype into a functional forecaster 
 - **Multi-Target Prediction:** Forecasts 6 different water quality indicators simultaneously.
 - **Time-Series Intelligence:** Utilizes historical data lags and rolling windows to capture trends.
 - **Station-Specific Models:** The `station ID` is used as a feature to learn the unique baseline for each location.
-- **Web Interface:** A simple Flask application allows users to select a station and date to receive a forecast.
+- **Web Interface:** A simple Streamlit application allows users to select a station and date to receive a forecast.
 - **End-to-End Pipeline:** Includes data preprocessing, feature engineering, model training, and deployment scripts.
 
 ## Tech Stack
 - **Language:** Python 3.9+
 - **Data Science:** Pandas, NumPy, Scikit-learn
-- **Web Framework:** Flask
+- **Web Framework:** Streamlit
 - **Model Persistence:** Joblib
 
 ## Model Performance
@@ -75,13 +75,10 @@ The strong performance on `Cl` and `SO₄` is a particular highlight.
 ## Project Structure
 ```
 .
-├── app.py                  # The main Flask application file
+├── app.py                  # The main Streamlit application file
 ├── prediction_model.pkl    # The saved, trained machine learning model
 ├── model_columns.pkl       # The list of feature columns required by the model
-├── notebooks/
-│   └── water_quality_modeling.ipynb # Jupyter Notebook with data exploration and model training
-├── templates/
-│   └── index.html          # The HTML template for the web interface
+├── Project.ipynb           # Jupyter Notebook with data exploration and model training
 ├── requirements.txt        # List of Python dependencies
 └── README.md               # You are here
 ```
@@ -110,16 +107,17 @@ pip install -r requirements.txt
 
 ## How to Run
 
-**1. Run the Flask Application:**
+**1. Run the Streamlit Application:**
 From the root directory of the project, execute the following command:
 ```bash
-python app.py
+streamlit run app.py
 ```
 
 **2. Access the Web Interface:**
 Open your web browser and navigate to:
 ```
-http://127.0.0.1:5000
+  Local URL: http://localhost:8501
+  Network URL: http://192.168.117.123:8501
 ```
 You will see the user interface where you can input a Station ID, Year, and Month to get a water quality forecast.
 
@@ -128,5 +126,5 @@ This project serves as a strong foundation. Future work could include:
 - **Long-Range Forecasting:** Implement an iterative prediction loop to forecast further into the future.
 - **Incorporate External Data:** Add weather data (temperature, rainfall) as features to improve accuracy.
 - **Advanced Time-Series Models:** Experiment with specialized models like LSTMs or Facebook's Prophet.
-- **Cloud Deployment:** Deploy the Flask application to a cloud service like Heroku or AWS for public access.
+- **Cloud Deployment:** Deploy the Streamlit application to a cloud service like Heroku or AWS for public access.
 - **Data Visualization:** Add charts to the web interface to show historical trends alongside the predictions.
